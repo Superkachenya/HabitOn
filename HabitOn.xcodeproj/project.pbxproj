@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44E0CEC1CCFE369B0D21ECE4 /* Pods_HabitOnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC4B3DA0DA2C43A2EDFE001 /* Pods_HabitOnTests.framework */; };
+		73014322D1350C9EF37B276A /* Pods_HabitOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C93291CC001E7920A250BC /* Pods_HabitOn.framework */; };
+		81614895FA1A0160264C32DF /* Pods_HabitOnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E889EAA24135A5A68C6A83F9 /* Pods_HabitOnUITests.framework */; };
+		830E4C0C1EC0C68A00D17255 /* DRL Theme Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */; };
+		830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */; };
+		830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */; };
+		830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */; };
+		830E4C151EC0C7D500D17255 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C141EC0C7D500D17255 /* PersistenceContainer.swift */; };
 		839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B261E1EC07D9F00A17A5D /* AppDelegate.swift */; };
-		839B26211EC07D9F00A17A5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B26201EC07D9F00A17A5D /* ViewController.swift */; };
 		839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* Main.storyboard */; };
 		839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B26251EC07D9F00A17A5D /* Assets.xcassets */; };
 		839B26291EC07D9F00A17A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */; };
@@ -34,9 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DCAEA3357CB28F5767844F6 /* Pods-HabitOnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOnUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOnUITests/Pods-HabitOnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1695E9F243E37C86DDF3DB1A /* Pods-HabitOnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOnUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOnUITests/Pods-HabitOnUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		39C93291CC001E7920A250BC /* Pods_HabitOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D72F35212F508721BCEDC5 /* Pods-HabitOnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOnTests/Pods-HabitOnTests.release.xcconfig"; sourceTree = "<group>"; };
+		531C649BCEEA97B003845B7F /* Pods-HabitOnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOnTests/Pods-HabitOnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DRL Theme Manager.swift"; path = "Theme/DRL Theme Manager.swift"; sourceTree = "<group>"; };
+		830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseVC.swift; path = Controller/BaseVC.swift; sourceTree = "<group>"; };
+		830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitVC.swift; path = Controller/CreateHabitVC.swift; sourceTree = "<group>"; };
+		830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabitOn.xcdatamodel; sourceTree = "<group>"; };
+		830E4C141EC0C7D500D17255 /* PersistenceContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
 		839B261B1EC07D9F00A17A5D /* HabitOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B261E1EC07D9F00A17A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		839B26201EC07D9F00A17A5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		839B26251EC07D9F00A17A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839B26281EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +63,10 @@
 		839B263A1EC07D9F00A17A5D /* HabitOnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitOnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B263E1EC07D9F00A17A5D /* HabitOnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitOnUITests.swift; sourceTree = "<group>"; };
 		839B26401EC07D9F00A17A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C04AAD65E208C01EE3F932B /* Pods-HabitOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn.debug.xcconfig"; sourceTree = "<group>"; };
+		9CC4B3DA0DA2C43A2EDFE001 /* Pods_HabitOnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitOnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0553FD0BCB0AFADB264C902 /* Pods-HabitOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn.release.xcconfig"; sourceTree = "<group>"; };
+		E889EAA24135A5A68C6A83F9 /* Pods_HabitOnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitOnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73014322D1350C9EF37B276A /* Pods_HabitOn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E0CEC1CCFE369B0D21ECE4 /* Pods_HabitOnTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81614895FA1A0160264C32DF /* Pods_HabitOnUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5219284AD9F8B7D4461C2AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39C93291CC001E7920A250BC /* Pods_HabitOn.framework */,
+				9CC4B3DA0DA2C43A2EDFE001 /* Pods_HabitOnTests.framework */,
+				E889EAA24135A5A68C6A83F9 /* Pods_HabitOnUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830E4C051EC0C31000D17255 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */,
+				830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		830E4C081EC0C32F00D17255 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		830E4C091EC0C35600D17255 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
+				830E4C141EC0C7D500D17255 /* PersistenceContainer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		830E4C0A1EC0C36600D17255 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		839B26121EC07D9F00A17A5D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +147,8 @@
 				839B26321EC07D9F00A17A5D /* HabitOnTests */,
 				839B263D1EC07D9F00A17A5D /* HabitOnUITests */,
 				839B261C1EC07D9F00A17A5D /* Products */,
+				B93F94F9E6DEEB2A99AA42E3 /* Pods */,
+				5219284AD9F8B7D4461C2AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				839B261E1EC07D9F00A17A5D /* AppDelegate.swift */,
-				839B26201EC07D9F00A17A5D /* ViewController.swift */,
+				830E4C0A1EC0C36600D17255 /* View */,
+				830E4C091EC0C35600D17255 /* Model */,
+				830E4C081EC0C32F00D17255 /* Theme */,
+				830E4C051EC0C31000D17255 /* Controller */,
 				839B26221EC07D9F00A17A5D /* Main.storyboard */,
 				839B26251EC07D9F00A17A5D /* Assets.xcassets */,
 				839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */,
@@ -125,6 +196,19 @@
 			path = HabitOnUITests;
 			sourceTree = "<group>";
 		};
+		B93F94F9E6DEEB2A99AA42E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C04AAD65E208C01EE3F932B /* Pods-HabitOn.debug.xcconfig */,
+				E0553FD0BCB0AFADB264C902 /* Pods-HabitOn.release.xcconfig */,
+				531C649BCEEA97B003845B7F /* Pods-HabitOnTests.debug.xcconfig */,
+				41D72F35212F508721BCEDC5 /* Pods-HabitOnTests.release.xcconfig */,
+				1695E9F243E37C86DDF3DB1A /* Pods-HabitOnUITests.debug.xcconfig */,
+				0DCAEA3357CB28F5767844F6 /* Pods-HabitOnUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839B26431EC07D9F00A17A5D /* Build configuration list for PBXNativeTarget "HabitOn" */;
 			buildPhases = (
+				7E64AB46BFB56294B344394B /* [CP] Check Pods Manifest.lock */,
 				839B26171EC07D9F00A17A5D /* Sources */,
 				839B26181EC07D9F00A17A5D /* Frameworks */,
 				839B26191EC07D9F00A17A5D /* Resources */,
+				3E66A1CEB3EE94910DF32B16 /* [CP] Embed Pods Frameworks */,
+				C045D757DFDE4C560B6A3ABE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839B26461EC07D9F00A17A5D /* Build configuration list for PBXNativeTarget "HabitOnTests" */;
 			buildPhases = (
+				9258EFB145D5A03C5F5DB1BB /* [CP] Check Pods Manifest.lock */,
 				839B262B1EC07D9F00A17A5D /* Sources */,
 				839B262C1EC07D9F00A17A5D /* Frameworks */,
 				839B262D1EC07D9F00A17A5D /* Resources */,
+				A08E2C1BF32A59CE776DBA6E /* [CP] Embed Pods Frameworks */,
+				215735231746D47B4F99312E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839B26491EC07D9F00A17A5D /* Build configuration list for PBXNativeTarget "HabitOnUITests" */;
 			buildPhases = (
+				B7DAEFB53F9C87DCB54209B5 /* [CP] Check Pods Manifest.lock */,
 				839B26361EC07D9F00A17A5D /* Sources */,
 				839B26371EC07D9F00A17A5D /* Frameworks */,
 				839B26381EC07D9F00A17A5D /* Resources */,
+				CD3BFB9256F53343EE51AFCE /* [CP] Embed Pods Frameworks */,
+				041367FCFB7C48A79541F75D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +350,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		041367FCFB7C48A79541F75D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitOnUITests/Pods-HabitOnUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		215735231746D47B4F99312E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitOnTests/Pods-HabitOnTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E66A1CEB3EE94910DF32B16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E64AB46BFB56294B344394B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9258EFB145D5A03C5F5DB1BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A08E2C1BF32A59CE776DBA6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitOnTests/Pods-HabitOnTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7DAEFB53F9C87DCB54209B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C045D757DFDE4C560B6A3ABE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3BFB9256F53343EE51AFCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitOnUITests/Pods-HabitOnUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		839B26171EC07D9F00A17A5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839B26211EC07D9F00A17A5D /* ViewController.swift in Sources */,
 				839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */,
+				830E4C0C1EC0C68A00D17255 /* DRL Theme Manager.swift in Sources */,
+				830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */,
+				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,
+				830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */,
+				830E4C151EC0C7D500D17255 /* PersistenceContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +650,7 @@
 		};
 		839B26441EC07D9F00A17A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C04AAD65E208C01EE3F932B /* Pods-HabitOn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UN4HT84AGH;
@@ -428,6 +664,7 @@
 		};
 		839B26451EC07D9F00A17A5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0553FD0BCB0AFADB264C902 /* Pods-HabitOn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UN4HT84AGH;
@@ -441,6 +678,7 @@
 		};
 		839B26471EC07D9F00A17A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531C649BCEEA97B003845B7F /* Pods-HabitOnTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +694,7 @@
 		};
 		839B26481EC07D9F00A17A5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D72F35212F508721BCEDC5 /* Pods-HabitOnTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +710,7 @@
 		};
 		839B264A1EC07D9F00A17A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1695E9F243E37C86DDF3DB1A /* Pods-HabitOnUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = UN4HT84AGH;
@@ -485,6 +725,7 @@
 		};
 		839B264B1EC07D9F00A17A5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCAEA3357CB28F5767844F6 /* Pods-HabitOnUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = UN4HT84AGH;
@@ -516,6 +757,7 @@
 				839B26451EC07D9F00A17A5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		839B26461EC07D9F00A17A5D /* Build configuration list for PBXNativeTarget "HabitOnTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +766,7 @@
 				839B26481EC07D9F00A17A5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		839B26491EC07D9F00A17A5D /* Build configuration list for PBXNativeTarget "HabitOnUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,8 +775,23 @@
 				839B264B1EC07D9F00A17A5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */,
+			);
+			currentVersion = 830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */;
+			name = HabitOn.xcdatamodeld;
+			path = Model/HabitOn.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 839B26131EC07D9F00A17A5D /* Project object */;
 }
