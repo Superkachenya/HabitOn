@@ -10,7 +10,16 @@ import Foundation
 import CoreData
 
 // MARK: - Core Data stack
-class MyPersistenceManager: NSObject {
+
+final class CoreDataManager: NSObject {
+    
+    // Can't init is singleton
+    private override init() { }
+    
+    // MARK: Shared Instance
+    static let shared = CoreDataManager()
+    
+    let mainContext = CoreDataManager.shared.persistentContainer.viewContext
     
     lazy var persistentContainer: NSPersistentContainer = {
         /*

@@ -14,7 +14,7 @@
 		830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */; };
 		830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */; };
 		830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */; };
-		830E4C151EC0C7D500D17255 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C141EC0C7D500D17255 /* PersistenceContainer.swift */; };
+		830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C141EC0C7D500D17255 /* CoreDataManager.swift */; };
 		839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B261E1EC07D9F00A17A5D /* AppDelegate.swift */; };
 		839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* Main.storyboard */; };
 		839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B26251EC07D9F00A17A5D /* Assets.xcassets */; };
@@ -50,7 +50,7 @@
 		830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseVC.swift; path = Controller/BaseVC.swift; sourceTree = "<group>"; };
 		830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitVC.swift; path = Controller/CreateHabitVC.swift; sourceTree = "<group>"; };
 		830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabitOn.xcdatamodel; sourceTree = "<group>"; };
-		830E4C141EC0C7D500D17255 /* PersistenceContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
+		830E4C141EC0C7D500D17255 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		839B261B1EC07D9F00A17A5D /* HabitOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B261E1EC07D9F00A17A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
-				830E4C141EC0C7D500D17255 /* PersistenceContainer.swift */,
+				830E4C141EC0C7D500D17255 /* CoreDataManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -408,7 +408,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9258EFB145D5A03C5F5DB1BB /* [CP] Check Pods Manifest.lock */ = {
@@ -423,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A08E2C1BF32A59CE776DBA6E /* [CP] Embed Pods Frameworks */ = {
@@ -453,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C045D757DFDE4C560B6A3ABE /* [CP] Copy Pods Resources */ = {
@@ -498,7 +498,7 @@
 				830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */,
 				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,
 				830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */,
-				830E4C151EC0C7D500D17255 /* PersistenceContainer.swift in Sources */,
+				830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

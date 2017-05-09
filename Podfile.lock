@@ -1,21 +1,24 @@
 PODS:
+  - BRYXBanner (0.7.3)
   - Hero (0.3.6)
   - LocalizationKit (1.1.7):
     - Socket.IO-Client-Swift (~> 8.3.3)
   - Socket.IO-Client-Swift (8.3.3)
-  - SwiftGen (4.2.0)
+  - SwiftyBeaver (1.2.2)
 
 DEPENDENCIES:
+  - BRYXBanner
   - Hero
   - LocalizationKit
-  - SwiftGen
+  - SwiftyBeaver
 
 SPEC CHECKSUMS:
+  BRYXBanner: bd26a91cb8a5826a8bc7687891043d287dd3ee53
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   LocalizationKit: 658e975bf90da35dbf5c82f2ba2954a14e6e8174
   Socket.IO-Client-Swift: a2faffdbde89c63aebc5d631041530c1068b02b8
-  SwiftGen: b6bfed151243348e4603b91bf5bc4eb2486c9d5b
+  SwiftyBeaver: 90a39e3dc5136b7285f2e4c870b107e3933b8b84
 
-PODFILE CHECKSUM: 9caa80fa876be58dce7befd570adb02ba1c1c305
+PODFILE CHECKSUM: ac7d95462c9243fd77005aa9d86ea30fcfcd6364
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

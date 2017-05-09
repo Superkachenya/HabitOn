@@ -6,10 +6,10 @@ target 'HabitOn' do
   use_frameworks!
 
   # Pods for HabitOn
-  pod 'SwiftGen'
   pod 'LocalizationKit'
   pod 'Hero'
-
+  pod 'SwiftyBeaver'
+  pod 'BRYXBanner'
   target 'HabitOnTests' do
     inherit! :search_paths
     # Pods for testing
