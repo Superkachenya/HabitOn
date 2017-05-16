@@ -12,24 +12,42 @@ import LocalizationKit
 class CreateHabitVC: BaseVC {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var habitTitleTextField: CustomTextField!
+    @IBOutlet weak var habitDetailsTextField: CustomTextField!
+    
+    var habitTitle: String?
+    var habitDetails: String?
+    var activeField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(ButtonTableCell.self)
         self.tableView.register(SwitchTableCell.self)
+        
+        self.habitTitleTextField.delegate = self
+        self.habitDetailsTextField.delegate = self
+        
+        self.subscribeForKeyboardNotifications()
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    deinit {
+       self.unsubscribeFromKeyboardNotifications()
+    }
     
+    //MARK: IBActions
+    @IBAction func actionCancelPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func actionSavePressed(_ sender: Any) {
+        
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 }
 
 extension CreateHabitVC: UITableViewDelegate, UITableViewDataSource {
@@ -46,7 +64,36 @@ extension CreateHabitVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         default:
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ButtonTableCell
+            cell.configure(indexPath.row)
             return cell
         }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70.0
+    }
 }
+
+extension CreateHabitVC: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField){
+        activeField = textField
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.habitDetailsTextField {
+            self.habitTitle = textField.text
+            print(self.habitTitle as Any)
+        } else {
+            self.habitDetails = textField.text
+            print(self.habitDetails as Any)
+        }
+        activeField = nil
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+}
+

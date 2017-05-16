@@ -10,6 +10,9 @@ import UIKit
 
 class ButtonTableCell: UITableViewCell, NibLoadableView {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var button: RoundedButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -19,5 +22,8 @@ class ButtonTableCell: UITableViewCell, NibLoadableView {
         super.setSelected(selected, animated: animated)
 
     }
-
+    
+    public func configure(_ index: Int) {
+        self.titleLabel?.text = CreateHabitCellContent.titleForCell(at: index)
+    }
 }

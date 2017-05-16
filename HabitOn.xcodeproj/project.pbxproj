@@ -27,6 +27,7 @@
 		839B18D81ECA579900CD58CE /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18D61ECA579900CD58CE /* ReusableView.swift */; };
 		839B18D91ECA579900CD58CE /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18D71ECA579900CD58CE /* NibLoadableView.swift */; };
 		839B18DB1ECA58BE00CD58CE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */; };
+		839B19451ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B19441ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift */; };
 		839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B261E1EC07D9F00A17A5D /* AppDelegate.swift */; };
 		839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* Main.storyboard */; };
 		839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B26251EC07D9F00A17A5D /* Assets.xcassets */; };
@@ -59,23 +60,24 @@
 		39C93291CC001E7920A250BC /* Pods_HabitOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D72F35212F508721BCEDC5 /* Pods-HabitOnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOnTests/Pods-HabitOnTests.release.xcconfig"; sourceTree = "<group>"; };
 		531C649BCEEA97B003845B7F /* Pods-HabitOnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOnTests/Pods-HabitOnTests.debug.xcconfig"; sourceTree = "<group>"; };
-		830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DRL Theme Manager.swift"; path = "Theme/DRL Theme Manager.swift"; sourceTree = "<group>"; };
-		830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseVC.swift; path = Controller/BaseVC.swift; sourceTree = "<group>"; };
-		830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitVC.swift; path = Controller/CreateHabitVC.swift; sourceTree = "<group>"; };
+		830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DRL Theme Manager.swift"; sourceTree = "<group>"; };
+		830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitVC.swift; sourceTree = "<group>"; };
 		830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabitOn.xcdatamodel; sourceTree = "<group>"; };
 		830E4C141EC0C7D500D17255 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		830E4C1E1EC2344A00D17255 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Extensions/UIColor.swift; sourceTree = "<group>"; };
-		830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
-		830E4C231EC236AA00D17255 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = View/RoundedButton.swift; sourceTree = "<group>"; };
+		830E4C1E1EC2344A00D17255 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		830E4C231EC236AA00D17255 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		839B18C41EC8F34D00CD58CE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitCellContent.swift; path = View/CreateHabitCellContent.swift; sourceTree = "<group>"; };
-		839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonTableCell.xib; path = View/ButtonTableCell.xib; sourceTree = "<group>"; };
-		839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwitchTableCell.xib; path = View/SwitchTableCell.xib; sourceTree = "<group>"; };
-		839B18CF1ECA56AB00CD58CE /* ButtonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonTableCell.swift; path = View/ButtonTableCell.swift; sourceTree = "<group>"; };
-		839B18D21ECA570C00CD58CE /* SwitchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchTableCell.swift; path = View/SwitchTableCell.swift; sourceTree = "<group>"; };
+		839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitCellContent.swift; sourceTree = "<group>"; };
+		839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableCell.xib; sourceTree = "<group>"; };
+		839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchTableCell.xib; sourceTree = "<group>"; };
+		839B18CF1ECA56AB00CD58CE /* ButtonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableCell.swift; sourceTree = "<group>"; };
+		839B18D21ECA570C00CD58CE /* SwitchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableCell.swift; sourceTree = "<group>"; };
 		839B18D61ECA579900CD58CE /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		839B18D71ECA579900CD58CE /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		839B19441ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitVCKeyboard.swift; sourceTree = "<group>"; };
 		839B261B1EC07D9F00A17A5D /* HabitOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B261E1EC07D9F00A17A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,39 +139,39 @@
 			isa = PBXGroup;
 			children = (
 				830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */,
-				830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */,
+				839B19461ECB9FD900CD58CE /* CreateHabitVC */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		830E4C081EC0C32F00D17255 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */,
 				83D2732C1EC8C44D0083468B /* ColorsConstants.swift */,
+				830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */,
 			);
-			name = Theme;
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		830E4C091EC0C35600D17255 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */,
 				839B18CA1ECA543300CD58CE /* CoreData */,
+				839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		830E4C0A1EC0C36600D17255 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				830E4C231EC236AA00D17255 /* RoundedButton.swift */,
-				839B18C41EC8F34D00CD58CE /* CustomTextField.swift */,
-				839B26221EC07D9F00A17A5D /* Main.storyboard */,
 				839B18D11ECA56B100CD58CE /* ButtonTableCell */,
 				839B18D41ECA571500CD58CE /* SwitchTableCell */,
+				839B18C41EC8F34D00CD58CE /* CustomTextField.swift */,
+				839B26221EC07D9F00A17A5D /* Main.storyboard */,
+				830E4C231EC236AA00D17255 /* RoundedButton.swift */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		830E4C161EC1C6C000D17255 /* Resources */ = {
@@ -177,64 +179,73 @@
 			children = (
 				839B26251EC07D9F00A17A5D /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		830E4C171EC22DF500D17255 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				830E4C1E1EC2344A00D17255 /* UIColor.swift */,
-				830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */,
 				839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */,
+				830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		839B18CA1ECA543300CD58CE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
 				830E4C141EC0C7D500D17255 /* CoreDataManager.swift */,
+				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
 			);
-			name = CoreData;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		839B18D11ECA56B100CD58CE /* ButtonTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */,
 				839B18CF1ECA56AB00CD58CE /* ButtonTableCell.swift */,
+				839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */,
 			);
-			name = ButtonTableCell;
+			path = ButtonTableCell;
 			sourceTree = "<group>";
 		};
 		839B18D41ECA571500CD58CE /* SwitchTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */,
 				839B18D21ECA570C00CD58CE /* SwitchTableCell.swift */,
+				839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */,
 			);
-			name = SwitchTableCell;
+			path = SwitchTableCell;
 			sourceTree = "<group>";
 		};
 		839B18D51ECA578A00CD58CE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				839B18D61ECA579900CD58CE /* ReusableView.swift */,
 				839B18D71ECA579900CD58CE /* NibLoadableView.swift */,
+				839B18D61ECA579900CD58CE /* ReusableView.swift */,
 			);
-			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		839B19461ECB9FD900CD58CE /* CreateHabitVC */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */,
+				839B19441ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift */,
+			);
+			name = CreateHabitVC;
 			sourceTree = "<group>";
 		};
 		839B26121EC07D9F00A17A5D = {
 			isa = PBXGroup;
 			children = (
+				5219284AD9F8B7D4461C2AC6 /* Frameworks */,
 				839B261D1EC07D9F00A17A5D /* HabitOn */,
 				839B26321EC07D9F00A17A5D /* HabitOnTests */,
 				839B263D1EC07D9F00A17A5D /* HabitOnUITests */,
-				839B261C1EC07D9F00A17A5D /* Products */,
 				B93F94F9E6DEEB2A99AA42E3 /* Pods */,
-				5219284AD9F8B7D4461C2AC6 /* Frameworks */,
+				839B261C1EC07D9F00A17A5D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,16 +262,16 @@
 		839B261D1EC07D9F00A17A5D /* HabitOn */ = {
 			isa = PBXGroup;
 			children = (
-				839B261E1EC07D9F00A17A5D /* AppDelegate.swift */,
-				839B18D51ECA578A00CD58CE /* Protocols */,
-				830E4C171EC22DF500D17255 /* Extensions */,
-				830E4C0A1EC0C36600D17255 /* View */,
-				830E4C091EC0C35600D17255 /* Model */,
-				830E4C081EC0C32F00D17255 /* Theme */,
 				830E4C051EC0C31000D17255 /* Controller */,
+				830E4C171EC22DF500D17255 /* Extensions */,
+				830E4C091EC0C35600D17255 /* Model */,
+				839B18D51ECA578A00CD58CE /* Protocols */,
 				830E4C161EC1C6C000D17255 /* Resources */,
-				839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */,
+				830E4C081EC0C32F00D17255 /* Theme */,
+				830E4C0A1EC0C36600D17255 /* View */,
+				839B261E1EC07D9F00A17A5D /* AppDelegate.swift */,
 				839B262A1EC07D9F00A17A5D /* Info.plist */,
+				839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */,
 			);
 			path = HabitOn;
 			sourceTree = "<group>";
@@ -592,6 +603,7 @@
 				830E4C201EC2344A00D17255 /* UIColor.swift in Sources */,
 				839B18DB1ECA58BE00CD58CE /* UITableViewExtension.swift in Sources */,
 				839B18D91ECA579900CD58CE /* NibLoadableView.swift in Sources */,
+				839B19451ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift in Sources */,
 				830E4C241EC236AA00D17255 /* RoundedButton.swift in Sources */,
 				830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */,
 				830E4C221EC2367100D17255 /* UIViewExtension.swift in Sources */,
@@ -640,6 +652,7 @@
 				839B26231EC07D9F00A17A5D /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */ = {
@@ -648,6 +661,7 @@
 				839B26281EC07D9F00A17A5D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -886,8 +900,7 @@
 				830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */,
 			);
 			currentVersion = 830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */;
-			name = HabitOn.xcdatamodeld;
-			path = Model/HabitOn.xcdatamodeld;
+			path = HabitOn.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
