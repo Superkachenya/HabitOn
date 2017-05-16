@@ -29,7 +29,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //add LocalizationKit support
         
-        Localization.start(appKey: "d3a270d6-68d1-4b0c-848e-95936384ff20", live: true)
+        // DEFINING APP SETTINGS DEFAULTS
+        var appDefaults = Dictionary<String, AnyObject>()
+        appDefaults["live_localization"] = true as AnyObject?
+        UserDefaults.standard.register(defaults: appDefaults)
+        UserDefaults.standard.synchronize()
+        
+        Localization.ifEmptyShowKey = true
+        Localization.start(appKey: "d3a270d6-68d1-4b0c-848e-95936384ff20", useSettings: true)
+        Localization.availableLanguages { (languages) in
+            print("Languages");
+        }
 
         return true
     }

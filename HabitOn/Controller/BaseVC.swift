@@ -16,14 +16,19 @@ class BaseVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = ThemeManager.currentTheme().backgroundColor
+        
+        ThemeManager.applyTheme(theme: .Dark)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         self.log.warning("MemoryWarning")
     }
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }
 

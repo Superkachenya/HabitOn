@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; placeholder = "Type Details"; ObjectID = "3ei-6L-ekE"; */
+"3ei-6L-ekE.placeholder" = "Type Details";
+
+/* Class = "UILabel"; text = "Select Time For Notifications"; ObjectID = "5wF-jW-Qhg"; */
+"5wF-jW-Qhg.text" = "Select Time For Notifications";
+
+/* Class = "UITextField"; placeholder = "Type Habit"; ObjectID = "6H4-yc-z0N"; */
+"6H4-yc-z0N.placeholder" = "Type Habit";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "8LL-40-gZi"; */
+"8LL-40-gZi.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "Select the tag"; ObjectID = "FZB-dZ-cO8"; */
+"FZB-dZ-cO8.text" = "Select the tag";
+
+/* Class = "UILabel"; text = "Days to complete"; ObjectID = "IOP-ad-Yql"; */
+"IOP-ad-Yql.text" = "Days to complete";
+
+/* Class = "UILabel"; text = "Days to complete"; ObjectID = "SWP-iq-vIu"; */
+"SWP-iq-vIu.text" = "Days to complete";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Spy-aR-KkO"; */
+"Spy-aR-KkO.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Turn on notifications"; ObjectID = "WKb-2H-hr9"; */
+"WKb-2H-hr9.text" = "Turn on notifications";
+
+/* Class = "UILabel"; text = "Create new habit"; ObjectID = "Ymc-fa-bny"; */
+"Ymc-fa-bny.text" = "Create new habit";
+
+/* Class = "UIButton"; normalTitle = "Save Habit"; ObjectID = "e1L-fh-gPD"; */
+"e1L-fh-gPD.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Select time for notifications"; ObjectID = "iDY-3m-Mpz"; */
+"iDY-3m-Mpz.text" = "Select time for notifications";
+
+/* Class = "UILabel"; text = "Turn on notifications"; ObjectID = "mie-eO-JpH"; */
+"mie-eO-JpH.text" = "Turn on notifications";
+
+/* Class = "UITextField"; placeholder = "Type Details"; ObjectID = "pcM-tc-et1"; */
+"pcM-tc-et1.placeholder" = "Type Details";
+
+/* Class = "UITextField"; placeholder = "Type Habit"; ObjectID = "yEX-gF-9tP"; */
+"yEX-gF-9tP.placeholder" = "Type Habit";

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ButtonTableCell" rowHeight="88" id="jAM-IS-X9e" customClass="ButtonTableCell" customModule="HabitOn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jAM-IS-X9e" id="BBw-nI-rAM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYp-mG-D23" customClass="RoundedButton" customModule="HabitOn" customModuleProvider="target">
+                        <rect key="frame" x="314" y="18" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.15686274510000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="UdG-ok-j6a"/>
+                            <constraint firstAttribute="height" constant="40" id="eGb-G1-r8a"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="forward"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yO-sk-P0S">
+                        <rect key="frame" x="33" y="8" width="259" height="58.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YYp-mG-D23" firstAttribute="centerY" secondItem="BBw-nI-rAM" secondAttribute="centerY" id="AIp-Xg-U9S"/>
+                    <constraint firstItem="2yO-sk-P0S" firstAttribute="top" secondItem="BBw-nI-rAM" secondAttribute="top" constant="8" id="BRh-ZM-mLl"/>
+                    <constraint firstAttribute="bottom" secondItem="2yO-sk-P0S" secondAttribute="bottom" constant="8" id="BSP-op-z8r"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YYp-mG-D23" secondAttribute="trailing" constant="33" id="Dau-tR-Jmp"/>
+                    <constraint firstItem="2yO-sk-P0S" firstAttribute="leading" secondItem="BBw-nI-rAM" secondAttribute="leading" constant="33" id="fcz-ey-sCX"/>
+                    <constraint firstItem="YYp-mG-D23" firstAttribute="leading" secondItem="2yO-sk-P0S" secondAttribute="trailing" constant="22" id="yZu-73-4Rh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-200" y="-147"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="forward" width="20" height="32"/>
+    </resources>
+</document>

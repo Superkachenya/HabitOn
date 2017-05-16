@@ -15,12 +15,17 @@
 		830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */; };
 		830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */; };
 		830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C141EC0C7D500D17255 /* CoreDataManager.swift */; };
+		830E4C201EC2344A00D17255 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C1E1EC2344A00D17255 /* UIColor.swift */; };
+		830E4C221EC2367100D17255 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */; };
+		830E4C241EC236AA00D17255 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C231EC236AA00D17255 /* RoundedButton.swift */; };
+		839B18C51EC8F34D00CD58CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C41EC8F34D00CD58CE /* CustomTextField.swift */; };
 		839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B261E1EC07D9F00A17A5D /* AppDelegate.swift */; };
 		839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* Main.storyboard */; };
 		839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B26251EC07D9F00A17A5D /* Assets.xcassets */; };
 		839B26291EC07D9F00A17A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */; };
 		839B26341EC07D9F00A17A5D /* HabitOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B26331EC07D9F00A17A5D /* HabitOnTests.swift */; };
 		839B263F1EC07D9F00A17A5D /* HabitOnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B263E1EC07D9F00A17A5D /* HabitOnUITests.swift */; };
+		83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2732C1EC8C44D0083468B /* ColorsConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,10 @@
 		830E4C0F1EC0C70B00D17255 /* CreateHabitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitVC.swift; path = Controller/CreateHabitVC.swift; sourceTree = "<group>"; };
 		830E4C121EC0C77300D17255 /* HabitOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabitOn.xcdatamodel; sourceTree = "<group>"; };
 		830E4C141EC0C7D500D17255 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		830E4C1E1EC2344A00D17255 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Extensions/UIColor.swift; sourceTree = "<group>"; };
+		830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
+		830E4C231EC236AA00D17255 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = View/RoundedButton.swift; sourceTree = "<group>"; };
+		839B18C41EC8F34D00CD58CE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		839B261B1EC07D9F00A17A5D /* HabitOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B261E1EC07D9F00A17A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +72,7 @@
 		839B263A1EC07D9F00A17A5D /* HabitOnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitOnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B263E1EC07D9F00A17A5D /* HabitOnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitOnUITests.swift; sourceTree = "<group>"; };
 		839B26401EC07D9F00A17A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D2732C1EC8C44D0083468B /* ColorsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
 		8C04AAD65E208C01EE3F932B /* Pods-HabitOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn.debug.xcconfig"; sourceTree = "<group>"; };
 		9CC4B3DA0DA2C43A2EDFE001 /* Pods_HabitOnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitOnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0553FD0BCB0AFADB264C902 /* Pods-HabitOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				830E4C0B1EC0C68A00D17255 /* DRL Theme Manager.swift */,
+				83D2732C1EC8C44D0083468B /* ColorsConstants.swift */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -136,8 +147,27 @@
 		830E4C0A1EC0C36600D17255 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				830E4C231EC236AA00D17255 /* RoundedButton.swift */,
+				839B18C41EC8F34D00CD58CE /* CustomTextField.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		830E4C161EC1C6C000D17255 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				839B26251EC07D9F00A17A5D /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		830E4C171EC22DF500D17255 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C1E1EC2344A00D17255 /* UIColor.swift */,
+				830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		839B26121EC07D9F00A17A5D = {
@@ -166,12 +196,13 @@
 			isa = PBXGroup;
 			children = (
 				839B261E1EC07D9F00A17A5D /* AppDelegate.swift */,
+				830E4C171EC22DF500D17255 /* Extensions */,
 				830E4C0A1EC0C36600D17255 /* View */,
 				830E4C091EC0C35600D17255 /* Model */,
 				830E4C081EC0C32F00D17255 /* Theme */,
 				830E4C051EC0C31000D17255 /* Controller */,
 				839B26221EC07D9F00A17A5D /* Main.storyboard */,
-				839B26251EC07D9F00A17A5D /* Assets.xcassets */,
+				830E4C161EC1C6C000D17255 /* Resources */,
 				839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */,
 				839B262A1EC07D9F00A17A5D /* Info.plist */,
 			);
@@ -497,7 +528,12 @@
 				830E4C0C1EC0C68A00D17255 /* DRL Theme Manager.swift in Sources */,
 				830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */,
 				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,
+				830E4C201EC2344A00D17255 /* UIColor.swift in Sources */,
+				830E4C241EC236AA00D17255 /* RoundedButton.swift in Sources */,
 				830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */,
+				830E4C221EC2367100D17255 /* UIViewExtension.swift in Sources */,
+				839B18C51EC8F34D00CD58CE /* CustomTextField.swift in Sources */,
+				83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */,
 				830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

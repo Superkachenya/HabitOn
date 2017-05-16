@@ -10,6 +10,8 @@ target 'HabitOn' do
   pod 'Hero'
   pod 'SwiftyBeaver'
   pod 'BRYXBanner'
+  
+  
   target 'HabitOnTests' do
     inherit! :search_paths
     # Pods for testing
