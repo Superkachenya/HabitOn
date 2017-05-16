@@ -125,7 +125,7 @@ struct ThemeManager {
             .withRenderingMode(.alwaysTemplate)
             .resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 6.0, bottom: 0, right: 0)), for: .normal)
         
-        UISwitch.appearance().onTintColor = theme.mainColor.withAlphaComponent(0.3)
-        UISwitch.appearance().thumbTintColor = theme.mainColor
+        UISwitch.appearance().onTintColor = theme.tintColor.withAlphaComponent(0.3)
+        UISwitch.appearance().thumbTintColor = theme.tintColor
     }
 }
