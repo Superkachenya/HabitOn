@@ -39,7 +39,7 @@ enum Theme: Int {
         }
     }
     
-    var customGray: UIColor {
+    var tintColor: UIColor {
         switch self {
         case .Dark:
             return colorManatee

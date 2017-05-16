@@ -11,10 +11,13 @@ import LocalizationKit
 
 class CreateHabitVC: BaseVC {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        tableView.register(ButtonTableCell.self)
+        self.tableView.register(SwitchTableCell.self)
     }
     
     /*
@@ -32,11 +35,18 @@ class CreateHabitVC: BaseVC {
 extension CreateHabitVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        return UITableViewCell()
+        switch indexPath.row {
+        case 1:
+            let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as SwitchTableCell
+            cell.configure(indexPath.row)
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ButtonTableCell
+            return cell
+        }
     }
 }

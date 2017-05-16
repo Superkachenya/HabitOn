@@ -1,9 +1,9 @@
 //
 //  NibLoadableView.swift
-//  TacoPOP
+//  HabitOn
 //
-//  Created by Jack Davis on 7/25/16.
-//  Copyright © 2016 Devslopes. All rights reserved.
+//  Created by Danil on 16.05.17.
+//  Copyright © 2017 danielvoitenkoapps. All rights reserved.
 //
 
 import UIKit

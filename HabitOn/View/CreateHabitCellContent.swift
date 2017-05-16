@@ -16,9 +16,9 @@ enum CreateHabitType: Int {
     case tag
 }
 
-struct CreateHabitCellTitle {
+struct CreateHabitCellContent {
     
-    func titleForCell(at index: Int) -> String {
+    static func titleForCell(at index: Int) -> String {
         
         switch index {
         case CreateHabitType.days.rawValue:

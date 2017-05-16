@@ -10,4 +10,26 @@ import UIKit
 
 class CustomTextField: UITextField {
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.layer.masksToBounds = false
+        let bgColor = ThemeManager.currentTheme().secondaryColor
+        bgColor.withAlphaComponent(0.6)
+        self.backgroundColor = bgColor
+        self.tintColor = ThemeManager.currentTheme().tintColor
+        self.textColor = ThemeManager.currentTheme().textColor
+        
+        self.layer.cornerRadius = 8.0
+    }
+    //TODO: Change placeholderColor
+    // Placeholder text
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: 10, dy: 0)
+    }
+    
+    // Editable text
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: 10, dy: 0)
+    }
 }

@@ -86,7 +86,7 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="HelveticaNeue-Bold" pointSize="24"/>
                                             <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the Habit" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-AB-frw">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the Habit" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-AB-frw" customClass="CustomTextField" customModule="HabitOn" customModuleProvider="target">
                                             <rect key="frame" x="33" y="109" width="309" height="50"/>
                                             <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.43137254899999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.15686274510000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,12 +98,9 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="7"/>
-                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the Details" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-ir-DzK">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type the Details" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-ir-DzK" customClass="CustomTextField" customModule="HabitOn" customModuleProvider="target">
                                             <rect key="frame" x="33" y="189" width="309" height="50"/>
                                             <color key="backgroundColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.43137254899999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.15686274510000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,9 +112,6 @@
                                             <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="7"/>
-                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                     </subviews>
@@ -136,7 +130,7 @@
                                     </constraints>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Fnw-C8-1Pj">
-                                    <rect key="frame" x="0.0" y="489" width="375" height="90"/>
+                                    <rect key="frame" x="0.0" y="257" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07B-1a-K8K" customClass="RoundedButton" customModule="HabitOn" customModuleProvider="target">
@@ -161,82 +155,6 @@
                                         <constraint firstAttribute="trailing" secondItem="07B-1a-K8K" secondAttribute="trailing" constant="33" id="LBJ-dl-X6m"/>
                                     </constraints>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="102" id="ceL-ZD-mpn">
-                                        <rect key="frame" x="0.0" y="285" width="375" height="102"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ceL-ZD-mpn" id="8Cm-k9-FTN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-5e-MHf" customClass="RoundedButton" customModule="HabitOn" customModuleProvider="target">
-                                                    <rect key="frame" x="302" y="31" width="40" height="40"/>
-                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.15686274510000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="6dr-th-TVB"/>
-                                                        <constraint firstAttribute="height" constant="40" id="gL2-WU-igX"/>
-                                                    </constraints>
-                                                    <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <state key="normal" image="forward"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-Nh-20N">
-                                                    <rect key="frame" x="33" y="20" width="247" height="61.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                                    <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="Vbn-Nh-20N" firstAttribute="leading" secondItem="8Cm-k9-FTN" secondAttribute="leading" constant="33" id="47s-me-yp3"/>
-                                                <constraint firstItem="Vbn-Nh-20N" firstAttribute="top" secondItem="8Cm-k9-FTN" secondAttribute="top" constant="20" id="Gjb-Xj-ayR"/>
-                                                <constraint firstAttribute="bottom" secondItem="Vbn-Nh-20N" secondAttribute="bottom" constant="20" id="LfS-B8-VUh"/>
-                                                <constraint firstItem="TF2-5e-MHf" firstAttribute="leading" secondItem="Vbn-Nh-20N" secondAttribute="trailing" constant="22" id="uOl-4O-NN3"/>
-                                                <constraint firstAttribute="trailing" secondItem="TF2-5e-MHf" secondAttribute="trailing" constant="33" id="wVy-SS-buK"/>
-                                                <constraint firstItem="TF2-5e-MHf" firstAttribute="centerY" secondItem="8Cm-k9-FTN" secondAttribute="centerY" id="yUX-cI-dOI"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="switch" id="QEc-ch-amA" userLabel="switch">
-                                        <rect key="frame" x="0.0" y="387" width="375" height="102"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QEc-ch-amA" id="VOD-lL-srw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOT-VC-NeD">
-                                                    <rect key="frame" x="33" y="20" width="238" height="61.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                                    <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BEj-d5-cvT">
-                                                    <rect key="frame" x="293" y="35.5" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.21960784310000001" green="0.18823529410000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="thumbTintColor" red="0.58431372550000005" green="0.57647058819999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                            <color key="value" red="0.58431372550000005" green="0.57647058819999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </switch>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="dOT-VC-NeD" firstAttribute="leading" secondItem="VOD-lL-srw" secondAttribute="leading" constant="33" id="2gs-vd-gar"/>
-                                                <constraint firstItem="dOT-VC-NeD" firstAttribute="top" secondItem="VOD-lL-srw" secondAttribute="top" constant="20" id="5RT-Nc-hRF"/>
-                                                <constraint firstAttribute="bottom" secondItem="dOT-VC-NeD" secondAttribute="bottom" constant="20" id="C5V-2Z-SR1"/>
-                                                <constraint firstAttribute="trailing" secondItem="BEj-d5-cvT" secondAttribute="trailing" constant="33" id="QfT-Wh-dhO"/>
-                                                <constraint firstItem="BEj-d5-cvT" firstAttribute="centerY" secondItem="VOD-lL-srw" secondAttribute="centerY" id="Ztf-QK-e3t"/>
-                                                <constraint firstItem="BEj-d5-cvT" firstAttribute="leading" secondItem="dOT-VC-NeD" secondAttribute="trailing" constant="22" id="kbH-Q9-GCq"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="ZuU-0n-ICU" id="Bf6-NH-NhB"/>
                                     <outlet property="delegate" destination="ZuU-0n-ICU" id="e9C-Ka-iam"/>
@@ -255,6 +173,9 @@
                             <constraint firstItem="xuD-Yk-gPv" firstAttribute="leading" secondItem="EWF-pl-Pnj" secondAttribute="leading" id="wmx-5d-2oz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="xuD-Yk-gPv" id="uiN-p5-yE3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vu-Yz-27k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,6 +231,5 @@
     <resources>
         <image name="Cancel" width="17" height="17"/>
         <image name="back2" width="375" height="667"/>
-        <image name="forward" width="20" height="32"/>
     </resources>
 </document>

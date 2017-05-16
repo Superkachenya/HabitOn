@@ -19,6 +19,14 @@
 		830E4C221EC2367100D17255 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */; };
 		830E4C241EC236AA00D17255 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E4C231EC236AA00D17255 /* RoundedButton.swift */; };
 		839B18C51EC8F34D00CD58CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C41EC8F34D00CD58CE /* CustomTextField.swift */; };
+		839B18C91ECA505300CD58CE /* CreateHabitCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */; };
+		839B18CC1ECA54B600CD58CE /* ButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */; };
+		839B18CE1ECA55E600CD58CE /* SwitchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */; };
+		839B18D01ECA56AB00CD58CE /* ButtonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18CF1ECA56AB00CD58CE /* ButtonTableCell.swift */; };
+		839B18D31ECA570C00CD58CE /* SwitchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18D21ECA570C00CD58CE /* SwitchTableCell.swift */; };
+		839B18D81ECA579900CD58CE /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18D61ECA579900CD58CE /* ReusableView.swift */; };
+		839B18D91ECA579900CD58CE /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18D71ECA579900CD58CE /* NibLoadableView.swift */; };
+		839B18DB1ECA58BE00CD58CE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */; };
 		839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B261E1EC07D9F00A17A5D /* AppDelegate.swift */; };
 		839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* Main.storyboard */; };
 		839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B26251EC07D9F00A17A5D /* Assets.xcassets */; };
@@ -60,6 +68,14 @@
 		830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
 		830E4C231EC236AA00D17255 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = View/RoundedButton.swift; sourceTree = "<group>"; };
 		839B18C41EC8F34D00CD58CE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitCellContent.swift; path = View/CreateHabitCellContent.swift; sourceTree = "<group>"; };
+		839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonTableCell.xib; path = View/ButtonTableCell.xib; sourceTree = "<group>"; };
+		839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwitchTableCell.xib; path = View/SwitchTableCell.xib; sourceTree = "<group>"; };
+		839B18CF1ECA56AB00CD58CE /* ButtonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonTableCell.swift; path = View/ButtonTableCell.swift; sourceTree = "<group>"; };
+		839B18D21ECA570C00CD58CE /* SwitchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchTableCell.swift; path = View/SwitchTableCell.swift; sourceTree = "<group>"; };
+		839B18D61ECA579900CD58CE /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		839B18D71ECA579900CD58CE /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		839B261B1EC07D9F00A17A5D /* HabitOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B261E1EC07D9F00A17A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,8 +154,8 @@
 		830E4C091EC0C35600D17255 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
-				830E4C141EC0C7D500D17255 /* CoreDataManager.swift */,
+				839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */,
+				839B18CA1ECA543300CD58CE /* CoreData */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -149,6 +165,9 @@
 			children = (
 				830E4C231EC236AA00D17255 /* RoundedButton.swift */,
 				839B18C41EC8F34D00CD58CE /* CustomTextField.swift */,
+				839B26221EC07D9F00A17A5D /* Main.storyboard */,
+				839B18D11ECA56B100CD58CE /* ButtonTableCell */,
+				839B18D41ECA571500CD58CE /* SwitchTableCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -166,8 +185,45 @@
 			children = (
 				830E4C1E1EC2344A00D17255 /* UIColor.swift */,
 				830E4C1F1EC2344A00D17255 /* UIViewExtension.swift */,
+				839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		839B18CA1ECA543300CD58CE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
+				830E4C141EC0C7D500D17255 /* CoreDataManager.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		839B18D11ECA56B100CD58CE /* ButtonTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */,
+				839B18CF1ECA56AB00CD58CE /* ButtonTableCell.swift */,
+			);
+			name = ButtonTableCell;
+			sourceTree = "<group>";
+		};
+		839B18D41ECA571500CD58CE /* SwitchTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				839B18CD1ECA55E600CD58CE /* SwitchTableCell.xib */,
+				839B18D21ECA570C00CD58CE /* SwitchTableCell.swift */,
+			);
+			name = SwitchTableCell;
+			sourceTree = "<group>";
+		};
+		839B18D51ECA578A00CD58CE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				839B18D61ECA579900CD58CE /* ReusableView.swift */,
+				839B18D71ECA579900CD58CE /* NibLoadableView.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		839B26121EC07D9F00A17A5D = {
@@ -196,12 +252,12 @@
 			isa = PBXGroup;
 			children = (
 				839B261E1EC07D9F00A17A5D /* AppDelegate.swift */,
+				839B18D51ECA578A00CD58CE /* Protocols */,
 				830E4C171EC22DF500D17255 /* Extensions */,
 				830E4C0A1EC0C36600D17255 /* View */,
 				830E4C091EC0C35600D17255 /* Model */,
 				830E4C081EC0C32F00D17255 /* Theme */,
 				830E4C051EC0C31000D17255 /* Controller */,
-				839B26221EC07D9F00A17A5D /* Main.storyboard */,
 				830E4C161EC1C6C000D17255 /* Resources */,
 				839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */,
 				839B262A1EC07D9F00A17A5D /* Info.plist */,
@@ -361,7 +417,9 @@
 			files = (
 				839B26291EC07D9F00A17A5D /* LaunchScreen.storyboard in Resources */,
 				839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */,
+				839B18CE1ECA55E600CD58CE /* SwitchTableCell.xib in Resources */,
 				839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */,
+				839B18CC1ECA54B600CD58CE /* ButtonTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,12 +585,18 @@
 				839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */,
 				830E4C0C1EC0C68A00D17255 /* DRL Theme Manager.swift in Sources */,
 				830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */,
+				839B18D01ECA56AB00CD58CE /* ButtonTableCell.swift in Sources */,
+				839B18D31ECA570C00CD58CE /* SwitchTableCell.swift in Sources */,
 				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,
+				839B18D81ECA579900CD58CE /* ReusableView.swift in Sources */,
 				830E4C201EC2344A00D17255 /* UIColor.swift in Sources */,
+				839B18DB1ECA58BE00CD58CE /* UITableViewExtension.swift in Sources */,
+				839B18D91ECA579900CD58CE /* NibLoadableView.swift in Sources */,
 				830E4C241EC236AA00D17255 /* RoundedButton.swift in Sources */,
 				830E4C101EC0C70B00D17255 /* CreateHabitVC.swift in Sources */,
 				830E4C221EC2367100D17255 /* UIViewExtension.swift in Sources */,
 				839B18C51EC8F34D00CD58CE /* CustomTextField.swift in Sources */,
+				839B18C91ECA505300CD58CE /* CreateHabitCellContent.swift in Sources */,
 				83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */,
 				830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */,
 			);
