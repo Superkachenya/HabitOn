@@ -25,8 +25,9 @@ class SwitchTableCell: UITableViewCell, NibLoadableView {
         self.titleLabel.textColor = ThemeManager.currentTheme().textColor
     }
     
-    public func configure(with text: String) {
+    public func configure(with text: String, delegate: SwitchTableCellDelegate) {
         self.titleLabel.text = text
+        self.delegate = delegate
     }
     
     @IBAction func switchValueChanged(_ sender: Any) {

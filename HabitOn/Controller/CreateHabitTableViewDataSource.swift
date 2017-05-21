@@ -22,22 +22,18 @@ extension CreateHabitVC: UITableViewDataSource {
         case CreateHabitType.Notification.rawValue:
             
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as SwitchTableCell
-            
-            self.configureSwitch(cell, with: type)
-            cell.delegate = self
+            self.configureSwitch(cell, with: type, delegate: self)
             
             return cell
             
         case CreateHabitType.NotificationTime.rawValue:
             
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ButtonTableCell
-            
-            cell.delegate = self
             if self.notificationsIsOn == false {
                 let dinamycType = CreateHabitType.Tag
-                self.configureButon(cell, with: dinamycType, at: indexPath.row + 1)
+                self.configureButon(cell, with: dinamycType, at: indexPath.row + 1, delegate: self)
             } else {
-                self.configureButon(cell, with: type, at: indexPath.row)
+                self.configureButon(cell, with: type, at: indexPath.row, delegate: self)
             }
             
             return cell
@@ -45,17 +41,17 @@ extension CreateHabitVC: UITableViewDataSource {
         default:
             
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ButtonTableCell
-            cell.delegate = self
-            self.configureButon(cell, with: type, at: indexPath.row)
+            self.configureButon(cell, with: type, at: indexPath.row, delegate: self)
             
             return cell
         }
     }
     
-    func configureSwitch(_ cell: SwitchTableCell, with contentType: CreateHabitType) {
-        cell.configure(with: CreateHabitCellContent.titleForCell(at: contentType))
+    func configureSwitch(_ cell: SwitchTableCell, with contentType: CreateHabitType, delegate: SwitchTableCellDelegate) {
+        cell.configure(with: CreateHabitCellContent.titleForCell(at: contentType), delegate: delegate)
     }
-    func configureButon(_ cell : ButtonTableCell, with type:CreateHabitType, at index: Int) {
-        cell.configure(with: CreateHabitCellContent.titleForCell(at: type), index: index)
+    
+    func configureButon(_ cell : ButtonTableCell, with type:CreateHabitType, at index: Int, delegate: ButtonTableCellDelegate) {
+        cell.configure(with: CreateHabitCellContent.titleForCell(at: type), index: index, delegate: delegate)
     }
 }

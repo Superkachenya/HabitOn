@@ -27,9 +27,10 @@ class ButtonTableCell: UITableViewCell, NibLoadableView {
         self.titleLabel.textColor = ThemeManager.currentTheme().textColor
     }
     
-    public func configure(with text: String, index: Int) {
+    public func configure(with text: String, index: Int, delegate: ButtonTableCellDelegate) {
         self.titleLabel?.text = text
         self.index = index
+        self.delegate = delegate
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
