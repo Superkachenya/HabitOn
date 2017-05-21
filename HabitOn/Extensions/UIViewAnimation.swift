@@ -10,17 +10,17 @@ import UIKit
 
 extension UIView {
     
-    func rotate(completion: @escaping () -> Void) {
+    func rotate(_ angle: CGFloat, completion:(() -> Void)? = nil) {
         let isIdeintity = self.transform.isIdentity
         UIView.animate(withDuration: 0.5, animations: {
             if isIdeintity {
-                self.transform = CGAffineTransform(rotationAngle: (1.0 * CGFloat.pi))
+                self.transform = CGAffineTransform(rotationAngle: (angle / 180 * CGFloat.pi))
             } else {
                 self.transform = CGAffineTransform(rotationAngle: 0)
             }
         }) { (isComplete) in
             if isComplete == true, isIdeintity == true {
-                completion()
+                completion?()
             }
         }
     }
