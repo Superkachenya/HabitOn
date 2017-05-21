@@ -21,7 +21,6 @@
 		832D31781ECE3276000A7495 /* CreateHabitTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D31771ECE3276000A7495 /* CreateHabitTableViewDataSource.swift */; };
 		832D317A1ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D31791ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift */; };
 		8359DC1E1ED08DD300D89A84 /* UIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359DC1D1ED08DD300D89A84 /* UIViewAnimation.swift */; };
-		8359DC201ED09D4100D89A84 /* PickerPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359DC1F1ED09D4100D89A84 /* PickerPopup.swift */; };
 		839B18C51EC8F34D00CD58CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C41EC8F34D00CD58CE /* CustomTextField.swift */; };
 		839B18C91ECA505300CD58CE /* CreateHabitCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */; };
 		839B18CC1ECA54B600CD58CE /* ButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */; };
@@ -33,7 +32,7 @@
 		839B18DB1ECA58BE00CD58CE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18DA1ECA58BE00CD58CE /* UITableViewExtension.swift */; };
 		839B19451ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B19441ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift */; };
 		839B261F1EC07D9F00A17A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B261E1EC07D9F00A17A5D /* AppDelegate.swift */; };
-		839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* Main.storyboard */; };
+		839B26241EC07D9F00A17A5D /* CreateHabitVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26221EC07D9F00A17A5D /* CreateHabitVC.storyboard */; };
 		839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839B26251EC07D9F00A17A5D /* Assets.xcassets */; };
 		839B26291EC07D9F00A17A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B26271EC07D9F00A17A5D /* LaunchScreen.storyboard */; };
 		839B26341EC07D9F00A17A5D /* HabitOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B26331EC07D9F00A17A5D /* HabitOnTests.swift */; };
@@ -80,7 +79,6 @@
 		832D31771ECE3276000A7495 /* CreateHabitTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitTableViewDataSource.swift; sourceTree = "<group>"; };
 		832D31791ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitTableViewDelegate.swift; sourceTree = "<group>"; };
 		8359DC1D1ED08DD300D89A84 /* UIViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimation.swift; sourceTree = "<group>"; };
-		8359DC1F1ED09D4100D89A84 /* PickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerPopup.swift; sourceTree = "<group>"; };
 		839B18C41EC8F34D00CD58CE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitCellContent.swift; sourceTree = "<group>"; };
 		839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableCell.xib; sourceTree = "<group>"; };
@@ -93,7 +91,7 @@
 		839B19441ECB9F6A00CD58CE /* CreateHabitVCKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitVCKeyboard.swift; sourceTree = "<group>"; };
 		839B261B1EC07D9F00A17A5D /* HabitOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B261E1EC07D9F00A17A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		839B26231EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CreateHabitVC.storyboard; sourceTree = "<group>"; };
 		839B26251EC07D9F00A17A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839B26281EC07D9F00A17A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839B262A1EC07D9F00A17A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +102,8 @@
 		839B263E1EC07D9F00A17A5D /* HabitOnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitOnUITests.swift; sourceTree = "<group>"; };
 		839B26401EC07D9F00A17A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D04A411ED0D4EF0052F4CC /* CreateHabitTimePickerPopup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateHabitTimePickerPopup.storyboard; path = CreateHabitPopup/CreateHabitTimePickerPopup.storyboard; sourceTree = "<group>"; };
-		83D04A441ED0D5680052F4CC /* CreateHabitTimePickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitTimePickerPopup.swift; path = CreateHabitPopup/CreateHabitTimePickerPopup.swift; sourceTree = "<group>"; };
-		83D04A461ED0D68D0052F4CC /* CreateHabitPickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitPickerPopup.swift; path = CreateHabitPopup/CreateHabitPickerPopup.swift; sourceTree = "<group>"; };
+		83D04A441ED0D5680052F4CC /* CreateHabitTimePickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitTimePickerPopup.swift; path = ../View/CreateHabitPopup/CreateHabitTimePickerPopup.swift; sourceTree = "<group>"; };
+		83D04A461ED0D68D0052F4CC /* CreateHabitPickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateHabitPickerPopup.swift; path = ../View/CreateHabitPopup/CreateHabitPickerPopup.swift; sourceTree = "<group>"; };
 		83D04A481ED0D69F0052F4CC /* CreateHabitPickerPopup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateHabitPickerPopup.storyboard; path = CreateHabitPopup/CreateHabitPickerPopup.storyboard; sourceTree = "<group>"; };
 		83D04A4A1ED0D71A0052F4CC /* StoryBoardLoadableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardLoadableVC.swift; sourceTree = "<group>"; };
 		83D2732C1EC8C44D0083468B /* ColorsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
@@ -157,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				830E4C0D1EC0C6BD00D17255 /* BaseVC.swift */,
+				8386D48C1ED229790005FE5C /* PickerPopups */,
 				839B19461ECB9FD900CD58CE /* CreateHabitVC */,
 			);
 			path = Controller;
@@ -183,13 +182,12 @@
 		830E4C0A1EC0C36600D17255 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				839B26221EC07D9F00A17A5D /* CreateHabitVC.storyboard */,
 				839B18D11ECA56B100CD58CE /* ButtonTableCell */,
 				839B18D41ECA571500CD58CE /* SwitchTableCell */,
-				839B18C41EC8F34D00CD58CE /* CustomTextField.swift */,
-				839B26221EC07D9F00A17A5D /* Main.storyboard */,
-				830E4C231EC236AA00D17255 /* RoundedButton.swift */,
-				8359DC1F1ED09D4100D89A84 /* PickerPopup.swift */,
-				83D04A431ED0D4F40052F4CC /* CreateHabitPopups */,
+				8386D48A1ED228C60005FE5C /* CustomTextField */,
+				8386D48B1ED228D60005FE5C /* RoundedButton */,
+				83D04A431ED0D4F40052F4CC /* PickerPopupsSB */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +218,31 @@
 				832D31791ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift */,
 			);
 			name = "TableViewDataSource+Delegate";
+			sourceTree = "<group>";
+		};
+		8386D48A1ED228C60005FE5C /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				839B18C41EC8F34D00CD58CE /* CustomTextField.swift */,
+			);
+			name = CustomTextField;
+			sourceTree = "<group>";
+		};
+		8386D48B1ED228D60005FE5C /* RoundedButton */ = {
+			isa = PBXGroup;
+			children = (
+				830E4C231EC236AA00D17255 /* RoundedButton.swift */,
+			);
+			name = RoundedButton;
+			sourceTree = "<group>";
+		};
+		8386D48C1ED229790005FE5C /* PickerPopups */ = {
+			isa = PBXGroup;
+			children = (
+				83D04A441ED0D5680052F4CC /* CreateHabitTimePickerPopup.swift */,
+				83D04A461ED0D68D0052F4CC /* CreateHabitPickerPopup.swift */,
+			);
+			name = PickerPopups;
 			sourceTree = "<group>";
 		};
 		839B18CA1ECA543300CD58CE /* CoreData */ = {
@@ -326,15 +349,13 @@
 			path = HabitOnUITests;
 			sourceTree = "<group>";
 		};
-		83D04A431ED0D4F40052F4CC /* CreateHabitPopups */ = {
+		83D04A431ED0D4F40052F4CC /* PickerPopupsSB */ = {
 			isa = PBXGroup;
 			children = (
-				83D04A441ED0D5680052F4CC /* CreateHabitTimePickerPopup.swift */,
 				83D04A411ED0D4EF0052F4CC /* CreateHabitTimePickerPopup.storyboard */,
-				83D04A461ED0D68D0052F4CC /* CreateHabitPickerPopup.swift */,
 				83D04A481ED0D69F0052F4CC /* CreateHabitPickerPopup.storyboard */,
 			);
-			name = CreateHabitPopups;
+			name = PickerPopupsSB;
 			sourceTree = "<group>";
 		};
 		B93F94F9E6DEEB2A99AA42E3 /* Pods */ = {
@@ -474,7 +495,7 @@
 				839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */,
 				839B18CE1ECA55E600CD58CE /* SwitchTableCell.xib in Resources */,
 				83D04A491ED0D69F0052F4CC /* CreateHabitPickerPopup.storyboard in Resources */,
-				839B26241EC07D9F00A17A5D /* Main.storyboard in Resources */,
+				839B26241EC07D9F00A17A5D /* CreateHabitVC.storyboard in Resources */,
 				839B18CC1ECA54B600CD58CE /* ButtonTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,7 +683,6 @@
 				83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */,
 				83D04A471ED0D68D0052F4CC /* CreateHabitPickerPopup.swift in Sources */,
 				830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */,
-				8359DC201ED09D4100D89A84 /* PickerPopup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,12 +718,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		839B26221EC07D9F00A17A5D /* Main.storyboard */ = {
+		839B26221EC07D9F00A17A5D /* CreateHabitVC.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				839B26231EC07D9F00A17A5D /* Base */,
 			);
-			name = Main.storyboard;
+			name = CreateHabitVC.storyboard;
 			path = .;
 			sourceTree = "<group>";
 		};

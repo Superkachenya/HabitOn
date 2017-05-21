@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    func rotate(completion: @escaping () -> ()) {
+    func rotate(completion: @escaping () -> Void) {
         let isIdeintity = self.transform.isIdentity
         UIView.animate(withDuration: 0.5, animations: {
             if isIdeintity {

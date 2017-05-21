@@ -26,14 +26,9 @@ class ButtonTableCell: UITableViewCell, NibLoadableView {
         
         self.titleLabel.textColor = ThemeManager.currentTheme().textColor
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
     
-    public func configure(_ index: Int) {
-        self.titleLabel?.text = CreateHabitCellContent.titleForCell(at: index)
+    public func configure(with text: String, index: Int) {
+        self.titleLabel?.text = text
         self.index = index
     }
     

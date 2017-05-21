@@ -69,7 +69,6 @@ class CreateHabitVC: BaseVC {
     @IBAction func actionCancelPressed(_ sender: UIButton) {
         sender.rotate { }
     }
-    
     @IBAction func actionSavePressed(_ sender: Any) {
         
     }
@@ -98,6 +97,7 @@ extension CreateHabitVC: ButtonTableCellDelegate {
         self.selectedButton = button
         let popupVC = CreateHabitPickerPopup.loadFromStoryBoard() as! CreateHabitPickerPopup
         popupVC.delegate = self
+        popupVC.type = index
         switch index {
         case CreateHabitType.NotificationTime.rawValue:
             if self.notificationsIsOn == true {

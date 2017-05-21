@@ -25,14 +25,10 @@ class SwitchTableCell: UITableViewCell, NibLoadableView {
         self.titleLabel.textColor = ThemeManager.currentTheme().textColor
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
+    public func configure(with text: String) {
+        self.titleLabel.text = text
     }
     
-    public func configure(_ index: Int) {
-        self.titleLabel.text = CreateHabitCellContent.titleForCell(at: index)
-    }
     @IBAction func switchValueChanged(_ sender: Any) {
         guard delegate != nil else { return }
         delegate?.enableNotifications(switcher.isOn)

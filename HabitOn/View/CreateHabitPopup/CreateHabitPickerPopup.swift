@@ -20,6 +20,7 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
     @IBOutlet weak var okButton: UIButton!
     
     var delegate: CreateHabitPickerPopupDelegate?
+    var type: CreateHabitType.RawValue?
     
     lazy var days: [String] = {
         var result = [String]()
@@ -29,6 +30,7 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
             return result
     }()
     lazy var tags: [Any] = {
+        
        return []
     }()
     fileprivate var selectedValue: Int?
