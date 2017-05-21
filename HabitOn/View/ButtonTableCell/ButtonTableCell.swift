@@ -34,7 +34,7 @@ class ButtonTableCell: UITableViewCell, NibLoadableView {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        sender.rotate(180.0) {
+        sender.rotate(angle: 180.0) {
             guard self.delegate != nil else { return }
             self.delegate?.showPopup(for: self.index, from: sender)
         }

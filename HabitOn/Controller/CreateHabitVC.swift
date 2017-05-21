@@ -67,7 +67,7 @@ class CreateHabitVC: BaseVC {
     
     //MARK: IBActions
     @IBAction func actionCancelPressed(_ sender: UIButton) {
-        sender.rotate(135.0)
+        sender.rotate(angle: 135.0)
     }
     @IBAction func actionSavePressed(_ sender: Any) {
         
@@ -115,12 +115,12 @@ extension CreateHabitVC: ButtonTableCellDelegate {
 extension CreateHabitVC: CreateHabitPickerPopupDelegate {
     func pickerValueSelected(_ value: Any?) {
         if let button = self.selectedButton {
-            button.rotate(180.0)
+            button.rotate(angle: 180.0)
         }
     }
     func pickerDismissed() {
         if let button = self.selectedButton {
-            button.rotate(180.0)
+            button.rotate(angle: 180.0)
         }
     }
 }
