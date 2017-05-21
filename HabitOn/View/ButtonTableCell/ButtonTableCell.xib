@@ -30,6 +30,9 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="buttonPressed:" destination="jAM-IS-X9e" eventType="touchUpInside" id="qis-0w-loL"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yO-sk-P0S">
                         <rect key="frame" x="33" y="8" width="267" height="58.5"/>

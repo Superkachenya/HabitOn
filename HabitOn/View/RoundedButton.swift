@@ -15,6 +15,7 @@ class RoundedButton: UIButton {
         
         let bgColor = ThemeManager.currentTheme().mainColor.withAlphaComponent(0.8)
         self.backgroundColor = UIColor.clear
+        self.setTitleColor(ThemeManager.currentTheme().textColor, for: .normal)
         self.layer.backgroundColor = bgColor.cgColor
         self.layer.cornerRadius = self.bounds.height / 2
         self.layer.masksToBounds = false

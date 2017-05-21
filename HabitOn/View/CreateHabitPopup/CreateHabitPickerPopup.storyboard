@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JCL-wo-EiC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Habit Picker Popup-->
+        <scene sceneID="lOd-K9-zHO">
+            <objects>
+                <viewController id="JCL-wo-EiC" customClass="CreateHabitPickerPopup" customModule="HabitOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZQp-QL-mFu"/>
+                        <viewControllerLayoutGuide type="bottom" id="RvR-7G-Iaq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOO-g4-v7v">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgk-OW-b0O">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHv-97-NKW">
+                                <rect key="frame" x="0.0" y="200" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VYk-Gt-LHH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="okButtonPressed:" destination="JCL-wo-EiC" eventType="touchUpInside" id="qxE-Pb-Etn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pgk-OW-b0O" secondAttribute="trailing" id="PDq-B8-Iqd"/>
+                            <constraint firstAttribute="trailing" secondItem="xHv-97-NKW" secondAttribute="trailing" id="bsH-gK-qvI"/>
+                            <constraint firstItem="Pgk-OW-b0O" firstAttribute="leading" secondItem="dOO-g4-v7v" secondAttribute="leading" id="cfn-wc-fm9"/>
+                            <constraint firstItem="xHv-97-NKW" firstAttribute="top" secondItem="Pgk-OW-b0O" secondAttribute="bottom" id="hc6-6Z-iJP"/>
+                            <constraint firstItem="Pgk-OW-b0O" firstAttribute="top" secondItem="dOO-g4-v7v" secondAttribute="top" id="oUZ-zi-mBz"/>
+                            <constraint firstItem="RvR-7G-Iaq" firstAttribute="top" secondItem="xHv-97-NKW" secondAttribute="bottom" id="tib-qw-q4e"/>
+                            <constraint firstItem="xHv-97-NKW" firstAttribute="leading" secondItem="dOO-g4-v7v" secondAttribute="leading" id="yeZ-DO-ACe"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="240"/>
+                    <connections>
+                        <outlet property="okButton" destination="xHv-97-NKW" id="eDW-Df-vef"/>
+                        <outlet property="picker" destination="Pgk-OW-b0O" id="u8h-RO-a8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syU-XY-lIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="116"/>
+        </scene>
+    </scenes>
+</document>

@@ -182,6 +182,7 @@
                     <connections>
                         <outlet property="habitDetailsTextField" destination="fDQ-ir-DzK" id="zPI-33-wfy"/>
                         <outlet property="habitTitleTextField" destination="7Jt-AB-frw" id="wDk-iR-rkN"/>
+                        <outlet property="headerTitleLabel" destination="T4c-iE-qhh" id="WMS-w4-5jh"/>
                         <outlet property="tableView" destination="xuD-Yk-gPv" id="uiN-p5-yE3"/>
                     </connections>
                 </viewController>
@@ -226,7 +227,7 @@
         <scene sceneID="F9Z-PC-Jvr">
             <objects>
                 <navigationController id="u7y-C6-dIa" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BKq-RE-Svc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="BKq-RE-Svc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
