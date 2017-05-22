@@ -27,10 +27,12 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
         for day in 1...31 {
             result.append("\(day)")
         }
+        let array = DefaultTags.tags
+
             return result
     }()
     lazy var tags: [Any] = {
-        
+        let array = DefaultTags.tags
        return []
     }()
     fileprivate var selectedValue: Int?

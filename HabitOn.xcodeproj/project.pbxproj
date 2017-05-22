@@ -21,6 +21,8 @@
 		832D31781ECE3276000A7495 /* CreateHabitTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D31771ECE3276000A7495 /* CreateHabitTableViewDataSource.swift */; };
 		832D317A1ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D31791ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift */; };
 		8359DC1E1ED08DD300D89A84 /* UIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359DC1D1ED08DD300D89A84 /* UIViewAnimation.swift */; };
+		8386D48E1ED23AB50005FE5C /* DefaultTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8386D48D1ED23AB50005FE5C /* DefaultTags.swift */; };
+		8386D4921ED240440005FE5C /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = 8386D4911ED240440005FE5C /* tags.json */; };
 		839B18C51EC8F34D00CD58CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C41EC8F34D00CD58CE /* CustomTextField.swift */; };
 		839B18C91ECA505300CD58CE /* CreateHabitCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */; };
 		839B18CC1ECA54B600CD58CE /* ButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */; };
@@ -79,6 +81,8 @@
 		832D31771ECE3276000A7495 /* CreateHabitTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitTableViewDataSource.swift; sourceTree = "<group>"; };
 		832D31791ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitTableViewDelegate.swift; sourceTree = "<group>"; };
 		8359DC1D1ED08DD300D89A84 /* UIViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimation.swift; sourceTree = "<group>"; };
+		8386D48D1ED23AB50005FE5C /* DefaultTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTags.swift; sourceTree = "<group>"; };
+		8386D4911ED240440005FE5C /* tags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
 		839B18C41EC8F34D00CD58CE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitCellContent.swift; sourceTree = "<group>"; };
 		839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableCell.xib; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			children = (
 				839B18CA1ECA543300CD58CE /* CoreData */,
 				839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */,
+				8386D48D1ED23AB50005FE5C /* DefaultTags.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 		830E4C161EC1C6C000D17255 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8386D4911ED240440005FE5C /* tags.json */,
 				839B26251EC07D9F00A17A5D /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -490,6 +496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8386D4921ED240440005FE5C /* tags.json in Resources */,
 				83D04A421ED0D4EF0052F4CC /* CreateHabitTimePickerPopup.storyboard in Resources */,
 				839B26291EC07D9F00A17A5D /* LaunchScreen.storyboard in Resources */,
 				839B26261EC07D9F00A17A5D /* Assets.xcassets in Resources */,
@@ -663,6 +670,7 @@
 				830E4C0C1EC0C68A00D17255 /* DRL Theme Manager.swift in Sources */,
 				830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */,
 				83D04A451ED0D5680052F4CC /* CreateHabitTimePickerPopup.swift in Sources */,
+				8386D48E1ED23AB50005FE5C /* DefaultTags.swift in Sources */,
 				839B18D01ECA56AB00CD58CE /* ButtonTableCell.swift in Sources */,
 				839B18D31ECA570C00CD58CE /* SwitchTableCell.swift in Sources */,
 				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,

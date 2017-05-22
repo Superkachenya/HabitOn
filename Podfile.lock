@@ -3,7 +3,6 @@ PODS:
   - Hero (0.3.6)
   - LocalizationKit (1.1.7):
     - Socket.IO-Client-Swift (~> 8.3.3)
-  - PopupDialog (0.5.4)
   - Presentr (1.2.3)
   - Socket.IO-Client-Swift (8.3.3)
   - SwiftyBeaver (1.2.2)
@@ -12,7 +11,6 @@ DEPENDENCIES:
   - BRYXBanner
   - Hero
   - LocalizationKit
-  - PopupDialog
   - Presentr
   - SwiftyBeaver
 
@@ -20,11 +18,10 @@ SPEC CHECKSUMS:
   BRYXBanner: bd26a91cb8a5826a8bc7687891043d287dd3ee53
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   LocalizationKit: 658e975bf90da35dbf5c82f2ba2954a14e6e8174
-  PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
   Presentr: a21c7bbb3532c8ff60320e235c0a4869e72f8885
   Socket.IO-Client-Swift: a2faffdbde89c63aebc5d631041530c1068b02b8
   SwiftyBeaver: 90a39e3dc5136b7285f2e4c870b107e3933b8b84
 
-PODFILE CHECKSUM: e012c8d90569441fe711378b4404b90c5ea8ea40
+PODFILE CHECKSUM: ce66109a3afcaace2baa3831d752410069471d94
 
 COCOAPODS: 1.2.1
