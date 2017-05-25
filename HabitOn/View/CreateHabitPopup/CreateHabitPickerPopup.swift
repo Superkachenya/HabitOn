@@ -15,7 +15,7 @@ protocol CreateHabitPickerPopupDelegate {
 }
 
 class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
-
+    
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var okButton: UIButton!
     
@@ -27,19 +27,14 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
         for day in 1...31 {
             result.append("\(day)")
         }
-        let array = DefaultTags.tags
-
-            return result
+        return result
     }()
-    lazy var tags: [Any] = {
-        let array = DefaultTags.tags
-       return []
-    }()
+    
     fileprivate var selectedValue: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.picker.dataSource = self
         self.picker.delegate = self
         self.picker.backgroundColor = ThemeManager.currentTheme().mainColor.withAlphaComponent(0.8)
@@ -47,7 +42,7 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
         self.okButton.backgroundColor = ThemeManager.currentTheme().mainColor.withAlphaComponent(0.8)
     }
     @IBAction func okButtonPressed(_ sender: Any) {
-        self.dismiss(animated: true) { 
+        self.dismiss(animated: true) {
             self.delegate?.pickerValueSelected(self.selectedValue)
         }
         print("Ok pressed")
