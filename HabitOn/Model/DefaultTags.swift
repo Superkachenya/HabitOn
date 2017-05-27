@@ -11,25 +11,24 @@ import Foundation
 
 struct DefaultTags {
     static  let tags: [Any] = {
-        guard let path = Bundle.main.path(forResource: "Tags", ofType: "plist") else { fatalError("failed to find file") }
+        guard let path = Bundle.main.url(forResource: "Tags", withExtension: "plist") else { fatalError("failed to find file") }
         
         do {
-            let jsonData = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let json = jsonData.components(separatedBy: ",")
-            let container = CoreDataManager.shared.persistentContainer
-            container.performBackgroundTask({ (context) in
-                
-            })
-            for row in json {
-                print(row)
+            let jsonData = try Data(contentsOf: path)
+            do {
+                let json = try PropertyListSerialization.propertyList(from: jsonData, options: [], format: nil) as? [[String : Any]]
+                print(json as Any)
+            } catch {
+                beaverLog.error(error)
             }
+            
         } catch{
-            fatalError("failed to read from file")
+            beaverLog.error(error)
         }
         return []
     }()
     
-//    static private func parseJSON(_ json  ) {
-//        
-//    }
+    static private func parseJSON(_ json: [[String:Any]]) {
+        
+    }
 }

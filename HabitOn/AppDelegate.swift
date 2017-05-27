@@ -10,6 +10,8 @@ import UIKit
 import SwiftyBeaver
 import LocalizationKit
 
+let beaverLog = SwiftyBeaver.self
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

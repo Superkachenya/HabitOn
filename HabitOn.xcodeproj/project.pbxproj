@@ -44,7 +44,6 @@
 		83C9A0621ED9D10400773D7C /* Tags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83C9A0611ED9D10400773D7C /* Tags.plist */; };
 		83D04A451ED0D5680052F4CC /* TimePickerPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D04A441ED0D5680052F4CC /* TimePickerPopup.swift */; };
 		83D04A471ED0D68D0052F4CC /* PickerPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D04A461ED0D68D0052F4CC /* PickerPopup.swift */; };
-		83D04A4B1ED0D71A0052F4CC /* StoryBoardLoadableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D04A4A1ED0D71A0052F4CC /* StoryBoardLoadableVC.swift */; };
 		83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2732C1EC8C44D0083468B /* ColorsConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,7 +110,6 @@
 		83C9A0611ED9D10400773D7C /* Tags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tags.plist; sourceTree = "<group>"; };
 		83D04A441ED0D5680052F4CC /* TimePickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimePickerPopup.swift; path = ../View/CreateHabitPopup/TimePickerPopup.swift; sourceTree = "<group>"; };
 		83D04A461ED0D68D0052F4CC /* PickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerPopup.swift; path = ../View/CreateHabitPopup/PickerPopup.swift; sourceTree = "<group>"; };
-		83D04A4A1ED0D71A0052F4CC /* StoryBoardLoadableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardLoadableVC.swift; sourceTree = "<group>"; };
 		83D2732C1EC8C44D0083468B /* ColorsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
 		8C04AAD65E208C01EE3F932B /* Pods-HabitOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitOn/Pods-HabitOn.debug.xcconfig"; sourceTree = "<group>"; };
 		9CC4B3DA0DA2C43A2EDFE001 /* Pods_HabitOnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitOnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,7 +284,6 @@
 			children = (
 				839B18D71ECA579900CD58CE /* NibLoadableView.swift */,
 				839B18D61ECA579900CD58CE /* ReusableView.swift */,
-				83D04A4A1ED0D71A0052F4CC /* StoryBoardLoadableVC.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -677,7 +674,6 @@
 				839B18D01ECA56AB00CD58CE /* ButtonTableCell.swift in Sources */,
 				839B18D31ECA570C00CD58CE /* SwitchTableCell.swift in Sources */,
 				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,
-				83D04A4B1ED0D71A0052F4CC /* StoryBoardLoadableVC.swift in Sources */,
 				8359DC1E1ED08DD300D89A84 /* UIViewAnimation.swift in Sources */,
 				839B18D81ECA579900CD58CE /* ReusableView.swift in Sources */,
 				832D317A1ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift in Sources */,

@@ -12,10 +12,14 @@ import Presentr
 
 class CreateHabitVC: BaseVC {
     
+    //MARK: Outlets
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var habitTitleTextField: CustomTextField!
     @IBOutlet weak var habitDetailsTextField: CustomTextField!
     @IBOutlet weak var headerTitleLabel: UILabel!
+    
+    //MARK: Properties
     
     var habitTitle: String?
     var habitDetails: String?
@@ -42,6 +46,8 @@ class CreateHabitVC: BaseVC {
         return customPresenter
     }()
     
+    //MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,27 +58,29 @@ class CreateHabitVC: BaseVC {
         self.habitDetailsTextField.delegate = self
         self.headerTitleLabel.textColor = ThemeManager.currentTheme().textColor
         
-        
         self.subscribeForKeyboardNotifications()
+        
+        _ = DefaultTags.tags
     }
     
     // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
     
-    deinit {
-        self.unsubscribeFromKeyboardNotifications()
-    }
-    
     //MARK: IBActions
+    
     @IBAction func actionCancelPressed(_ sender: UIButton) {
         sender.rotate(angle: 135.0)
     }
+    
     @IBAction func actionSavePressed(_ sender: Any) {
         
     }
 }
+
+//MARK: SwitchTableCellDelegate
 
 extension CreateHabitVC: SwitchTableCellDelegate {
     
@@ -90,6 +98,8 @@ extension CreateHabitVC: SwitchTableCellDelegate {
         self.tableView.endUpdates()
     }
 }
+
+//MARK: ButtonTableCellDelegate
 
 extension CreateHabitVC: ButtonTableCellDelegate {
     
@@ -119,6 +129,8 @@ extension CreateHabitVC: ButtonTableCellDelegate {
     }
 }
 
+//MARK: PickerPopupDelegate
+
 extension CreateHabitVC: PickerPopupDelegate {
     func pickerValueSelected(_ value: Any?) {
         if let button = self.selectedButton {
@@ -131,6 +143,8 @@ extension CreateHabitVC: PickerPopupDelegate {
         }
     }
 }
+
+//MARK: TimePickerPopupDelegate
 
 extension CreateHabitVC: TimePickerPopupDelegate {
     
@@ -147,6 +161,7 @@ extension CreateHabitVC: TimePickerPopupDelegate {
     }
     
 }
+
 //MARK: UITextFieldDelegate
 extension CreateHabitVC: UITextFieldDelegate {
     

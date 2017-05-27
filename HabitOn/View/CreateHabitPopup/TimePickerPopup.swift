@@ -14,7 +14,7 @@ protocol TimePickerPopupDelegate {
     func timePickerDismissed()
 }
 
-class TimePickerPopup: BaseVC, StoryBoardLoadableVC {
+class TimePickerPopup: BaseVC {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var okButton: UIButton!

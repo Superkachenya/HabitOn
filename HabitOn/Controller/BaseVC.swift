@@ -12,8 +12,6 @@ import SwiftyBeaver
 
 class BaseVC: UIViewController {
 
-    let log = SwiftyBeaver.self
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +21,7 @@ class BaseVC: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        self.log.warning("MemoryWarning")
+        beaverLog.warning("MemoryWarning")
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
