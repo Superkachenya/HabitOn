@@ -9,17 +9,17 @@
 import UIKit
 import Presentr
 
-protocol CreateHabitPickerPopupDelegate {
+protocol PickerPopupDelegate {
     func pickerValueSelected(_ value: Any?)
     func pickerDismissed()
 }
 
-class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
+class PickerPopup: BaseVC {
     
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var okButton: UIButton!
     
-    var delegate: CreateHabitPickerPopupDelegate?
+    var delegate: PickerPopupDelegate?
     var type: CreateHabitType.RawValue?
     
     lazy var days: [String] = {
@@ -37,9 +37,9 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
         
         self.picker.dataSource = self
         self.picker.delegate = self
-        self.picker.backgroundColor = ThemeManager.currentTheme().mainColor.withAlphaComponent(0.8)
-        self.okButton.setTitleColor(ThemeManager.currentTheme().textColor, for: .normal)
-        self.okButton.backgroundColor = ThemeManager.currentTheme().mainColor.withAlphaComponent(0.8)
+        self.picker.backgroundColor = UIColor.mainColor.withAlphaComponent(0.8)
+        self.okButton.setTitleColor(.textColor, for: .normal)
+        self.okButton.backgroundColor = UIColor.mainColor.withAlphaComponent(0.8)
     }
     @IBAction func okButtonPressed(_ sender: Any) {
         self.dismiss(animated: true) {
@@ -49,7 +49,7 @@ class CreateHabitPickerPopup: BaseVC, StoryBoardLoadableVC {
     }
 }
 
-extension CreateHabitPickerPopup: PresentrDelegate {
+extension PickerPopup: PresentrDelegate {
     func presentrShouldDismiss(keyboardShowing: Bool) -> Bool {
         self.delegate?.pickerDismissed()
         print("Something")
@@ -57,7 +57,7 @@ extension CreateHabitPickerPopup: PresentrDelegate {
     }
 }
 
-extension CreateHabitPickerPopup: UIPickerViewDataSource, UIPickerViewDelegate {
+extension PickerPopup: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

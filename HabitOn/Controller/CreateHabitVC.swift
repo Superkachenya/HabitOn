@@ -95,15 +95,22 @@ extension CreateHabitVC: ButtonTableCellDelegate {
     
     func showPopup(for index: Int, from button: UIButton) {
         self.selectedButton = button
-        let popupVC = CreateHabitPickerPopup.loadFromStoryBoard() as! CreateHabitPickerPopup
+        
+        //create PickerPopup
+        let popupVC =  PickerPopup.init(nibName: String(describing:PickerPopup.self), bundle: nil)
         popupVC.delegate = self
-        popupVC.type = index
+        
         switch index {
         case CreateHabitType.NotificationTime.rawValue:
             if self.notificationsIsOn == true {
-                let timePopupVC = CreateHabitTimePickerPopup.loadFromStoryBoard()
-                customPresentViewController(presenter, viewController: timePopupVC, animated: true, completion: nil)
+                
+                //create TimePickerPopup
+                let timePickerPopup = TimePickerPopup.init(nibName: String(describing:TimePickerPopup.self), bundle: nil)
+                timePickerPopup.delegate = self
+                
+                customPresentViewController(presenter, viewController: timePickerPopup, animated: true, completion: nil)
             } else {
+                
                 customPresentViewController(presenter, viewController: popupVC, animated: true, completion: nil)
             }
         default:
@@ -112,7 +119,7 @@ extension CreateHabitVC: ButtonTableCellDelegate {
     }
 }
 
-extension CreateHabitVC: CreateHabitPickerPopupDelegate {
+extension CreateHabitVC: PickerPopupDelegate {
     func pickerValueSelected(_ value: Any?) {
         if let button = self.selectedButton {
             button.rotate(angle: 180.0)
@@ -125,6 +132,22 @@ extension CreateHabitVC: CreateHabitPickerPopupDelegate {
     }
 }
 
+extension CreateHabitVC: TimePickerPopupDelegate {
+    
+    func timePickerValueSelected(_ value: Date) {
+        if let button = self.selectedButton {
+            button.rotate(angle: 180.0)
+        }
+    }
+    
+    func timePickerDismissed() {
+        if let button = self.selectedButton {
+            button.rotate(angle: 180.0)
+        }
+    }
+    
+}
+//MARK: UITextFieldDelegate
 extension CreateHabitVC: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField){

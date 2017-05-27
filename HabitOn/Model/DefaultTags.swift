@@ -11,7 +11,7 @@ import Foundation
 
 struct DefaultTags {
     static  let tags: [Any] = {
-        guard let path = Bundle.main.path(forResource: "tags", ofType: "json") else { fatalError("failed to find file") }
+        guard let path = Bundle.main.path(forResource: "Tags", ofType: "plist") else { fatalError("failed to find file") }
         
         do {
             let jsonData = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
@@ -24,7 +24,6 @@ struct DefaultTags {
                 print(row)
             }
         } catch{
-            
             fatalError("failed to read from file")
         }
         return []
