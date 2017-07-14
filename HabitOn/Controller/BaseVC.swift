@@ -16,7 +16,7 @@ class BaseVC: UIViewController {
         super.viewDidLoad()
         
         ThemeManager.applyTheme(theme: .Dark)
-        
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -22,13 +22,8 @@ class PickerPopup: BaseVC {
     var delegate: PickerPopupDelegate?
     var type: CreateHabitType.RawValue?
     
-    lazy var days: [String] = {
-        var result = [String]()
-        for day in 1...31 {
-            result.append("\(day)")
-        }
-        return result
-    }()
+    //TODO: FIX IT
+    var content: [Any]?
     
     fileprivate var selectedValue: Int?
     
@@ -62,16 +57,26 @@ extension PickerPopup: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.days.count
+        return self.content?.count ?? 0
     }
+    
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+
+        if let obj = content?[row] as? Tag {
+            return NSAttributedString(string: obj.title!, attributes: [NSForegroundColorAttributeName:UIColor.textColor])
+        } else {
+            let string = content?[row] as! String
+
+            return NSAttributedString(string: string, attributes: [NSForegroundColorAttributeName:UIColor.textColor])
+ 
+        }
         
-        let string = self.days[row]
-        return NSAttributedString(string: string, attributes: [NSForegroundColorAttributeName:ThemeManager.currentTheme().textColor])
+        return nil //NSAttributedString(string: string, attributes: [NSForegroundColorAttributeName:UIColor.textColor])
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.selectedValue = row
-        print(self.days[row])
     }
 }

@@ -46,6 +46,8 @@ class CreateHabitVC: BaseVC {
         return customPresenter
     }()
     
+    var tags: [Tag]?
+    var days: [String]?
     //MARK: Lifecycle
     
     override func viewDidLoad() {
@@ -59,8 +61,12 @@ class CreateHabitVC: BaseVC {
         self.headerTitleLabel.textColor = ThemeManager.currentTheme().textColor
         
         self.subscribeForKeyboardNotifications()
-        
-        _ = DefaultTags.tags
+        DefaultTags.updateTags({ (success, error) in
+            if error == nil {
+                self.tags = DefaultTags.tags
+            }
+        })
+        self.days = Days.days
     }
     
     // MARK: - Navigation
@@ -86,7 +92,7 @@ extension CreateHabitVC: SwitchTableCellDelegate {
     
     func enableNotifications(_ flag: Bool) {
         self.notificationsIsOn = flag
-        let indexPath = IndexPath(row: CreateHabitType.NotificationTime.rawValue, section: 0)
+        let indexPath = IndexPath(row: CreateHabitType.notificationTime.rawValue, section: 0)
         self.tableView.beginUpdates()
         if flag == true {
             self.rowsCount = self.rowsCount + 1
@@ -111,7 +117,7 @@ extension CreateHabitVC: ButtonTableCellDelegate {
         popupVC.delegate = self
         
         switch index {
-        case CreateHabitType.NotificationTime.rawValue:
+        case CreateHabitType.notificationTime.rawValue:
             if self.notificationsIsOn == true {
                 
                 //create TimePickerPopup
@@ -123,6 +129,14 @@ extension CreateHabitVC: ButtonTableCellDelegate {
                 
                 customPresentViewController(presenter, viewController: popupVC, animated: true, completion: nil)
             }
+        case CreateHabitType.days.rawValue:
+            
+            popupVC.content = self.days
+            customPresentViewController(presenter, viewController: popupVC, animated: true, completion: nil)
+        case CreateHabitType.tags.rawValue:
+            
+            popupVC.content = self.tags
+            customPresentViewController(presenter, viewController: popupVC, animated: true, completion: nil)
         default:
             customPresentViewController(presenter, viewController: popupVC, animated: true, completion: nil)
         }

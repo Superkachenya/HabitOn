@@ -16,18 +16,16 @@ let beaverLog = SwiftyBeaver.self
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let log = SwiftyBeaver.self
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //d3a270d6-68d1-4b0c-848e-95936384ff20
         // add log destinations. at least one is needed!
         let console = ConsoleDestination() // log to Xcode Console
         let file = FileDestination() // log to default swiftybeaver.log file
         let platform = SBPlatformDestination(appID: "5309vA", appSecret: "4qxmsmgfnjYPoElx61s09qmm1rpi3hmz", encryptionKey: "d0p3aW3i6pekpuuhbtz0nb9slk81x3ka")
-        log.addDestination(console)
-        log.addDestination(file)
-        log.addDestination(platform)
+        beaverLog.addDestination(console)
+        beaverLog.addDestination(file)
+        beaverLog.addDestination(platform)
         
         //add LocalizationKit support
         
@@ -43,6 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Languages");
         }
 
+        let homeDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String
+        
+        beaverLog.debug(homeDir)
+        
         return true
     }
 }

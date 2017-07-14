@@ -42,6 +42,8 @@
 		83C9A05E1ED9C78700773D7C /* PickerPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C9A05D1ED9C78700773D7C /* PickerPopup.xib */; };
 		83C9A0601ED9CEAF00773D7C /* TimePickerPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C9A05F1ED9CEAF00773D7C /* TimePickerPopup.xib */; };
 		83C9A0621ED9D10400773D7C /* Tags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83C9A0611ED9D10400773D7C /* Tags.plist */; };
+		83C9A0641ED9E0FF00773D7C /* TagParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9A0631ED9E0FF00773D7C /* TagParser.swift */; };
+		83C9A0871EDA1AEE00773D7C /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9A0861EDA1AEE00773D7C /* Days.swift */; };
 		83D04A451ED0D5680052F4CC /* TimePickerPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D04A441ED0D5680052F4CC /* TimePickerPopup.swift */; };
 		83D04A471ED0D68D0052F4CC /* PickerPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D04A461ED0D68D0052F4CC /* PickerPopup.swift */; };
 		83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2732C1EC8C44D0083468B /* ColorsConstants.swift */; };
@@ -81,7 +83,7 @@
 		832D31771ECE3276000A7495 /* CreateHabitTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitTableViewDataSource.swift; sourceTree = "<group>"; };
 		832D31791ECE32AA000A7495 /* CreateHabitTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitTableViewDelegate.swift; sourceTree = "<group>"; };
 		8359DC1D1ED08DD300D89A84 /* UIViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimation.swift; sourceTree = "<group>"; };
-		8386D48D1ED23AB50005FE5C /* DefaultTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTags.swift; sourceTree = "<group>"; };
+		8386D48D1ED23AB50005FE5C /* DefaultTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultTags.swift; path = ../DefaultTags.swift; sourceTree = "<group>"; };
 		839B18C41EC8F34D00CD58CE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitCellContent.swift; sourceTree = "<group>"; };
 		839B18CB1ECA54B600CD58CE /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableCell.xib; sourceTree = "<group>"; };
@@ -108,6 +110,8 @@
 		83C9A05D1ED9C78700773D7C /* PickerPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerPopup.xib; sourceTree = "<group>"; };
 		83C9A05F1ED9CEAF00773D7C /* TimePickerPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerPopup.xib; sourceTree = "<group>"; };
 		83C9A0611ED9D10400773D7C /* Tags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tags.plist; sourceTree = "<group>"; };
+		83C9A0631ED9E0FF00773D7C /* TagParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagParser.swift; sourceTree = "<group>"; };
+		83C9A0861EDA1AEE00773D7C /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		83D04A441ED0D5680052F4CC /* TimePickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimePickerPopup.swift; path = ../View/CreateHabitPopup/TimePickerPopup.swift; sourceTree = "<group>"; };
 		83D04A461ED0D68D0052F4CC /* PickerPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerPopup.swift; path = ../View/CreateHabitPopup/PickerPopup.swift; sourceTree = "<group>"; };
 		83D2732C1EC8C44D0083468B /* ColorsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstants.swift; sourceTree = "<group>"; };
@@ -179,7 +183,6 @@
 			children = (
 				839B18CA1ECA543300CD58CE /* CoreData */,
 				839B18C81ECA505300CD58CE /* CreateHabitCellContent.swift */,
-				8386D48D1ED23AB50005FE5C /* DefaultTags.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,7 +258,10 @@
 		839B18CA1ECA543300CD58CE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				8386D48D1ED23AB50005FE5C /* DefaultTags.swift */,
+				83C9A0861EDA1AEE00773D7C /* Days.swift */,
 				830E4C141EC0C7D500D17255 /* CoreDataManager.swift */,
+				83C9A0631ED9E0FF00773D7C /* TagParser.swift */,
 				830E4C111EC0C77300D17255 /* HabitOn.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -671,6 +677,7 @@
 				830E4C0E1EC0C6BD00D17255 /* BaseVC.swift in Sources */,
 				83D04A451ED0D5680052F4CC /* TimePickerPopup.swift in Sources */,
 				8386D48E1ED23AB50005FE5C /* DefaultTags.swift in Sources */,
+				83C9A0641ED9E0FF00773D7C /* TagParser.swift in Sources */,
 				839B18D01ECA56AB00CD58CE /* ButtonTableCell.swift in Sources */,
 				839B18D31ECA570C00CD58CE /* SwitchTableCell.swift in Sources */,
 				830E4C131EC0C77300D17255 /* HabitOn.xcdatamodeld in Sources */,
@@ -690,6 +697,7 @@
 				832D31781ECE3276000A7495 /* CreateHabitTableViewDataSource.swift in Sources */,
 				83D2732D1EC8C44D0083468B /* ColorsConstants.swift in Sources */,
 				83D04A471ED0D68D0052F4CC /* PickerPopup.swift in Sources */,
+				83C9A0871EDA1AEE00773D7C /* Days.swift in Sources */,
 				830E4C151EC0C7D500D17255 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

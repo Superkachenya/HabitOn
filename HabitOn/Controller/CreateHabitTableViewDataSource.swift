@@ -19,18 +19,18 @@ extension CreateHabitVC: UITableViewDataSource {
         
         switch indexPath.row {
             
-        case CreateHabitType.Notification.rawValue:
+        case CreateHabitType.notification.rawValue:
             
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as SwitchTableCell
             self.configureSwitch(cell, with: type, delegate: self)
             
             return cell
             
-        case CreateHabitType.NotificationTime.rawValue:
+        case CreateHabitType.notificationTime.rawValue:
             
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ButtonTableCell
             if self.notificationsIsOn == false {
-                let dinamycType = CreateHabitType.Tag
+                let dinamycType = CreateHabitType.tags
                 self.configureButon(cell, with: dinamycType, at: indexPath.row + 1, delegate: self)
             } else {
                 self.configureButon(cell, with: type, at: indexPath.row, delegate: self)

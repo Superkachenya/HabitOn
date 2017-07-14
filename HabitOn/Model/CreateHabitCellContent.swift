@@ -10,10 +10,10 @@ import Foundation
 import LocalizationKit
 
 enum CreateHabitType: Int {
-    case Days
-    case Notification
-    case NotificationTime
-    case Tag
+    case days
+    case notification
+    case notificationTime
+    case tags
 }
 
 struct CreateHabitCellContent {
@@ -21,13 +21,13 @@ struct CreateHabitCellContent {
     static func titleForCell(at index: CreateHabitType) -> String {
         
         switch index {
-        case CreateHabitType.Days:
+        case CreateHabitType.days:
            return Localization.get("String.Days.to.complete", alternate: "Days to complete")
-        case CreateHabitType.Notification:
+        case CreateHabitType.notification:
             return Localization.get("String.Turn.on.notifications", alternate: "Turn on notifications")
-        case CreateHabitType.NotificationTime:
+        case CreateHabitType.notificationTime:
             return Localization.get("String.Select.time.for.notifications", alternate: "Select time for notifications")
-        case CreateHabitType.Tag:
+        case CreateHabitType.tags:
             return Localization.get("String.Select.the.tag", alternate: "Select the tag")
         }
     }

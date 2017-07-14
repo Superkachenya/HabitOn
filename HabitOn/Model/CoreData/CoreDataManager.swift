@@ -13,14 +13,6 @@ import CoreData
 
 final class CoreDataManager: NSObject {
     
-    // Can't init is singleton
-    private override init() { }
-    
-    // MARK: Shared Instance
-    static let shared = CoreDataManager()
-    
-    let mainContext = CoreDataManager.shared.persistentContainer.viewContext
-    
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation

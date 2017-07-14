@@ -14,9 +14,7 @@ class CustomTextField: UITextField {
         super.awakeFromNib()
         
         self.layer.masksToBounds = false
-        let bgColor = ThemeManager.currentTheme().secondaryColor
-        bgColor.withAlphaComponent(0.6)
-        self.backgroundColor = bgColor
+        self.backgroundColor = UIColor.secondaryColor.withAlphaComponent(0.6)
         self.tintColor = ThemeManager.currentTheme().tintColor
         self.textColor = ThemeManager.currentTheme().textColor
         
